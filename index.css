@@ -1,0 +1,164 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+      text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* SECTION HOME */
+.home_main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+    background: linear-gradient(135deg, #8b0000, #a52a2a);
+    background-color: #ffffff;
+    padding-top: 100px; /* Compense le header fixe */
+}
+
+/* CONTAINERS */
+.home_container, 
+.home_container_text{
+    width: 40%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.home_container_text{
+    background-color: #ffffff;
+    padding: 30px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* IMAGE PRINCIPALE */
+.home_img{
+    border-radius: 50%;
+    width: 55%;
+    height: auto;
+    object-fit: cover;
+    transition: 0.4s ease;
+}
+
+.home_img:hover{
+    transform: scale(1.08);
+    box-shadow: 0 0 20px rgba(139,0,0,0.6);
+}
+
+
+.home_cont{
+    width: 90%;
+    height: 70vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.home_box{
+    border: 5px outset;
+    width: 30%;
+    height: 80%;
+    transition: all 0.3s ease;
+}
+
+.home_box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 15px brown;
+    border: 5px solid red;
+}
+
+.home_img_box{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@media (max-width:800px) {
+
+    body{
+        gap: 50px;
+    }
+
+
+    .home_main{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .home_container, 
+    .home_container_text{
+        width: 80%;
+        height: auto;
+    }
+
+    
+        .home_cont{
+            flex-direction: column;
+            height: 900px;
+            gap: 50px;
+        }
+    
+        .home_box{
+            width: 80%;
+            height: auto;
+        }
+}
+
+
+
+
+
+
+@media (max-width:1200px) {
+
+    body{
+        gap: 70px;
+    }
+
+
+    .home_main{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .home_container, 
+    .home_container_text{
+        width: 80%;
+        height: auto;
+    }
+
+    
+        .home_cont{
+            height: auto;
+            gap: 20px;
+            width: 100%;
+        }
+    
+        .home_box{
+            width: 40%;
+            height: 40%;
+        }
+
+        .home_img_box{
+            width: 100%;
+            height: 100%;
+        }
+}
